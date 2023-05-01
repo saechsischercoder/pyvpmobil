@@ -4,7 +4,7 @@ pyVPMobil is an unoffical python package to interact with the API of the german 
 ## Installation
 To install pyVPMobil run:
 ```bash
-pip install git+https://github.com/BlueSchnabeltier/pyvpmobil-x.git
+pip install git+https://github.com/BlueSchnabeltier/pyvpmobil.git
 ```
 
 ## Usage
