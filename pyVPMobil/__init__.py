@@ -15,7 +15,7 @@ class School:
         global json_data
         json_data = parse(self.xml_data)["VpMobil"]
         self.json_data = json_data
-        self.off_days = [datetime.strptime(date, '%y%m%d') for date in self.json_data["FreieTage"]["ft"]]
+        self.off_days = [datetime.strptime(date, "%y%m%d") for date in self.json_data["FreieTage"]["ft"]]
         
         try:
             self.extra_info = self.json_data["ZusatzInfo"]["ZiZeile"]
