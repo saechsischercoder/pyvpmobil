@@ -9,8 +9,6 @@ class School:
         auth = b64encode(f"{username}:{password}".encode()).decode()
         self.xml_data = get(f"https://www.stundenplan24.de/{school_code}/mobil/mobdaten/PlanKl{date.strftime('%Y%m%d')}.xml", headers={"Authorization": f"Basic {auth}"}).text
 
-        print(self.xml_data)
-
         if "Seite nicht gefunden" in self.xml_data:
             raise VPMobilError("Either school isn't in on the given date, the timetable isn't there yet for the reqeusted date or the credentials provided are invalid")
 
