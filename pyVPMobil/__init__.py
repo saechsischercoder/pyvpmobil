@@ -16,7 +16,12 @@ class School:
         json_data = parse(self.xml_data)["VpMobil"]
         self.json_data = json_data
         self.off_days = [datetime.strptime(date, '%y%m%d') for date in self.json_data["FreieTage"]["ft"]]
-        self.extra_info = self.json_data["ZusatzInfo"]["ZiZeile"]
+        
+        try:
+            self.extra_info = self.json_data["ZusatzInfo"]["ZiZeile"]
+            
+        except KeyError:
+            self.extra_info = None
 
     class Class:
         def __init__(self, class_name):
