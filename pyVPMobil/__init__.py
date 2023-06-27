@@ -18,7 +18,7 @@ class School:
         self.off_days = [datetime.strptime(date, "%y%m%d") for date in self.json_data["FreieTage"]["ft"]]
 
         try:
-            self.extra_info = self.json_data["ZusatzInfo"]["ZiZeile"]
+            self.extra_info = "\n".join(for line in self.json_data["ZusatzInfo"]["ZiZeile"])
 
         except KeyError:
             self.extra_info = None
