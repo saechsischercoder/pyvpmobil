@@ -1,5 +1,5 @@
 # pyVPMobil
-pyVPMobil is an unoffical python package to interact with the API of the german timetable service VpMobil/Stundenplan24.
+pyVPMobil is an unofficial Python library to interact with the API of the German timetable service VpMobil/Stundenplan24.
 
 ## Installation
 To install pyVPMobil run:
