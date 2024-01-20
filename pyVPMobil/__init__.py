@@ -36,4 +36,4 @@ class School:
             if class_json == None:
                 raise InvalidClassName("The class you input does not exist.")
 
-            self.timetable = [{"count": lesson["St"], "begin": lesson["Beginn"], "end": lesson["Ende"], "lesson": lesson["Fa"], "teacher": lesson["Le"], "classroom": lesson["Ra"], "info": lesson["If"]} for lesson in class_json["Pl"]["Std"]]
+            self.timetable = [{"count": lesson["St"], "begin": lesson["Beginn"], "end": lesson["Ende"], "subject": lesson["Fa"], "teacher": lesson["Le"], "classroom": lesson["Ra"], "info": lesson["If"]} for lesson in class_json["Pl"]["Std"]]
