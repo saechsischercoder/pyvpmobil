@@ -30,8 +30,8 @@ print(school.json_data)
 print(school.extra_info)
 
 # Initialize a class
-Class = school.Class(class_name="1a")
+school_class = school.school_class(class_name="1a")
 
 # Print the timetable of the class
-print(Class.timetable)
+print(school_class.timetable)
 ```
