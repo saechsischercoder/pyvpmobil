@@ -23,13 +23,13 @@ class School:
         except KeyError:
             self.extra_info = None
 
-    class Class:
+    class school_class:
         def __init__(self, class_name):
             class_json = None
 
-            for Class in json_data["Klassen"]["Kl"]:
-                if Class["Kurz"] == class_name.lower():
-                    class_json = Class
+            for school_class in json_data["Klassen"]["Kl"]:
+                if school_class["Kurz"] == class_name.lower():
+                    class_json = school_class
 
                     break
 
