@@ -25,7 +25,7 @@ Access German school timetables programmatically with this robust API client. Bu
 
 ### **Direct Installation (Recommended)**
 ```bash
-pip install git+https://github.com/BlueSchnabeltier/pyvpmobil.git
+pip install git+https://github.com/saechsischercoder/pyvpmobil.git
 ```
 
 ## 📖 Usage Examples
@@ -33,7 +33,7 @@ pip install git+https://github.com/BlueSchnabeltier/pyvpmobil.git
 ### **Basic Timetable Access**
 ```python
 from datetime import datetime
-from school_timetable import SchoolTimetable
+from pyvpmobil import SchoolTimetable
 
 # Initialize client
 school = SchoolTimetable(
@@ -54,7 +54,7 @@ print("Today's schedule:", timetable.timetable)
 
 ### **Advanced Schedule Analysis**
 ```python
-from school_timetable import SchoolTimetable, InvalidClassName
+from pyvpmobil import SchoolTimetable, InvalidClassName
 
 try:
     school = SchoolTimetable(
@@ -136,7 +136,7 @@ Represents individual class schedules with filtering capabilities.
 
 ### **Best Practices**
 ```python
-from school_timetable import (
+from pyvpmobil import (
     SchoolTimetable, 
     InvalidClassName, 
     AuthenticationError,
