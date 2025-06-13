@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(name="pyvpmobil",
-    description="An unoffical python package to interact with the API of the german timetable service VpMobil/Stundenplan24",
+    description="Python API client for German school timetable services VpMobil/Stundenplan24 with comprehensive data access",
     author="BlueSchnabeltier",
-    url="https://github.com/BlueSchnabeltier/pyvpmobil",
+    url="https://github.com/saechsischercoder/pyvpmobil",
     packages=["pyvpmobil"],
     install_requires=["datetime", "requests", "xmltodict"],
 )
